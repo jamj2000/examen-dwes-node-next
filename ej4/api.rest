@@ -1,0 +1,39 @@
+GET http://localhost:3000/api/alumnos HTTP/1.1
+
+###
+
+GET http://localhost:3000/api/alumnos/2 HTTP/1.1
+
+###
+
+POST http://localhost:3000/api/alumnos HTTP/1.1
+content-type: application/json
+
+{
+    "nombre": "Isabel",
+    "edad": "25",
+    "domicilio": {
+        "calle": "Europa",
+        "num": "38",
+        "localidad": "Aguilar"
+    }
+}
+
+###
+
+PUT http://localhost:3000/api/alumnos/2 HTTP/1.1
+content-type: application/json
+
+{
+    "nombre": "Eva",
+    "edad": "23",
+    "domicilio": {
+        "calle": "Estrecha",
+        "num": "100",
+        "localidad": "La Rambla"
+    }
+}
+
+###
+
+DELETE http://localhost:3000/api/alumnos/1 HTTP/1.1
